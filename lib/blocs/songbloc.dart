@@ -6,10 +6,12 @@ import 'package:platform_design/models/song.dart';
 import 'appstates.dart';
 
 class SongBloc extends Bloc<AppGenericEvent, SongState> {
-  final SongDataProvider songDataProvider = SongDataProvider(); 
+  final SongDataProvider songDataProvider = SongDataProvider();
 
-  @override
-  SongState get initialState => SongState();
+  SongBloc() : super(SongState()); 
+
+  //@override
+  //SongState get initialState => SongState();
 
   @override
   Stream<SongState> mapEventToState(

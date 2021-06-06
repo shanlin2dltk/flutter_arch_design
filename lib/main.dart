@@ -92,11 +92,11 @@ class _PlatformAdaptingHomePageState extends State<PlatformAdaptingHomePage> {
       tabBar: CupertinoTabBar(
         items: [
           BottomNavigationBarItem(
-              title: Text(SongsTab.title), icon: SongsTab.iosIcon),
+              label: SongsTab.title, icon: SongsTab.iosIcon),
           BottomNavigationBarItem(
-              title: Text(NewsTab.title), icon: NewsTab.iosIcon),
+              label: NewsTab.title, icon: NewsTab.iosIcon),
           BottomNavigationBarItem(
-              title: Text(ProfileTab.title), icon: ProfileTab.iosIcon),
+              label: ProfileTab.title, icon: ProfileTab.iosIcon),
         ],
       ),
       tabBuilder: (context, index) {
